@@ -39,19 +39,19 @@ type StoreDistributorBehaviourSubject = Record<
   BehaviorSubject<unknown>
 >;
 
-class StoreDistributorFromRedux {
+class ReduxStoreDistributor {
   private store: StoreDistributor = {};
   private storeBehaviourSubject: StoreDistributorBehaviourSubject = {};
-  private static instance: StoreDistributorFromRedux;
+  private static instance: ReduxStoreDistributor;
 
   constructor() {
-    if (!StoreDistributorFromRedux.instance) {
+    if (!ReduxStoreDistributor.instance) {
       this.store = {};
       this.storeBehaviourSubject = {};
-      StoreDistributorFromRedux.instance = this;
+      ReduxStoreDistributor.instance = this;
     }
 
-    return StoreDistributorFromRedux.instance;
+    return ReduxStoreDistributor.instance;
   }
 
   registerStore<
@@ -108,7 +108,7 @@ class StoreDistributorFromRedux {
     return Object.keys(this.store) as Array<keyof StoreDistributor>;
   }
 
-  static getInstance(): StoreDistributorFromRedux {
+  static getInstance(): ReduxStoreDistributor {
     if (!this.instance) {
       this.instance = new this();
     }
@@ -116,8 +116,8 @@ class StoreDistributorFromRedux {
   }
 }
 
-export const storeDistributorFromRedux = Object.freeze(
-  StoreDistributorFromRedux.getInstance()
+export const reduxStoreDistributor = Object.freeze(
+  ReduxStoreDistributor.getInstance()
 );
 
-export default StoreDistributorFromRedux;
+export default ReduxStoreDistributor;

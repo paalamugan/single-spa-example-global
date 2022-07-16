@@ -1,4 +1,4 @@
 export {
-  storeDistributorFromRedux,
-  default as StoreDistributorFromRedux,
-} from "./StoreDistributorFromRedux";
+  reduxStoreDistributor,
+  default as ReduxStoreDistributor,
+} from "./ReduxStoreDistributor";
