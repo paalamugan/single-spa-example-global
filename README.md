@@ -21,7 +21,7 @@ storeDistributor.registerStore(storeName, store);
   storeDistributor.registerStore(storeName, store);
   ```
 
-  - Add Below line, So you can access registered Store state value from other micro frontend application.
+  - Add Below line, Where you would like to access registered Store state value.
 
   ```ts
   import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
@@ -29,6 +29,8 @@ storeDistributor.registerStore(storeName, store);
   console.log("state", state);
   ```
 
+ - Add Below line, Where you would like to access registered Store state value as observable.
+ 
   ```ts
   import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
   const state$ = storeDistributor.getState$(storeName);
@@ -36,7 +38,7 @@ storeDistributor.registerStore(storeName, store);
     console.log("state", state);
   });
   ```
-
+- Add Below line, To update data from one microfrontend to other microfrontend
   ```ts
   import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
   storeDistributor.dispatch({ type: "INCREMENT", payload: 1 });
