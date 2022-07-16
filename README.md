@@ -35,7 +35,7 @@ Single spa share data between single spa microfrontend application.
   state$.subscribe((state) => {
     console.log("state", state);
   });
-```
+  ```
 
 - Add Below line, To update data from one microfrontend to other microfrontend
   ```ts
