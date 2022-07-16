@@ -1,6 +1,6 @@
 {
   "name": "@single-spa-example/global",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Share data between one to other single spa microfrontend application.",
   "license": "MIT",
   "main": "dist/single-spa-example-global.js",
