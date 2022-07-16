@@ -1,5 +1,3 @@
-const {
-  singleSpaReactBabelConfig,
-} = require("@single-spa-example/common-config");
+const { babelConfig } = require("@single-spa-example/config");
 
-module.exports = singleSpaReactBabelConfig();
+module.exports = babelConfig;

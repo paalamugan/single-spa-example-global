@@ -1,3 +1,3 @@
-const { singleSpaWebpackConfig } = require("@single-spa-example/common-config");
+const { singleSpaReactWebpackConfig } = require("@single-spa-example/config");
 
-module.exports = singleSpaWebpackConfig("single-spa-example", "global");
+module.exports = singleSpaReactWebpackConfig("single-spa-example", "global");

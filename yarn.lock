@@ -1320,10 +1320,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@single-spa-example/common-config@^1.0.0":
+"@single-spa-example/config@^1.0.0":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@single-spa-example/common-config/-/common-config-1.0.0.tgz#9ac4ebc7c660f34525850ee8cc2f4a4efd787602"
-  integrity sha512-7hx3wWSimtZOmyKt11dLcWwEfcpeESEGsOD3mrLnc2bhom7M7hsgDhgpoePLxtdVZlmx8ku2E2PSgw8umXoMhg==
+  resolved "https://registry.yarnpkg.com/@single-spa-example/config/-/config-1.0.0.tgz#a8271f75c64404e42d42062026edbea1d4f6c186"
+  integrity sha512-byN6TGBFP7jkgVZALr5NRew/FjVU0leob5YX5Jb8r+LILkpLt9R/84AG51poCzW+Yl81V0fHk3aQT0TaQRcGjQ==
   dependencies:
     autoprefixer "^10.4.7"
     babel-plugin-module-resolver "^4.1.0"
