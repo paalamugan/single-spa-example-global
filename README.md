@@ -4,7 +4,7 @@ Single spa share data between single spa microfrontend application.
 
 ## How to Use
 
-- One Way to do
+- One Way to do, Registered store from single-spa microfrontend
 
 ```ts
 import { StoreDistributorFromRedux } from "single-spa-global";
@@ -12,37 +12,35 @@ const storeDistributor = new StoreDistributorFromRedux();
 storeDistributor.registerStore(storeName, store);
 ```
 
-- Another Way to do
-
-  - Add Below line, In Which micro frontend application store you would like to share to another micro frontend application.
+- Another Way to do, Registered store from single-spa microfrontend
 
   ```ts
   import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
   storeDistributor.registerStore(storeName, store);
   ```
 
-  - Add Below line, Where you would like to access registered Store state value.
+- Add Below line, Where you would like to access registered Store state value.
 
-  ```ts
-  import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
-  const state = storeDistributor.getState(storeName);
+```ts
+import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
+const state = storeDistributor.getState(storeName);
+console.log("state", state);
+```
+
+- Add Below line, Where you would like to access registered Store state value as observable.
+
+```ts
+import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
+const state$ = storeDistributor.getState$(storeName);
+state$.subscribe((state) => {
   console.log("state", state);
-  ```
-
- - Add Below line, Where you would like to access registered Store state value as observable.
- 
-  ```ts
-  import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
-  const state$ = storeDistributor.getState$(storeName);
-  state$.subscribe((state) => {
-    console.log("state", state);
-  });
-  ```
+});
+```
 - Add Below line, To update data from one microfrontend to other microfrontend
-  ```ts
-  import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
-  storeDistributor.dispatch({ type: "INCREMENT", payload: 1 });
-  ```
+```ts
+import { storeDistributorFromRedux as storeDistributor } from "single-spa-global";
+storeDistributor.dispatch({ type: "INCREMENT", payload: 1 });
+```
 
 ## Getting started
 
