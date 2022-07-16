@@ -1320,6 +1320,27 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@single-spa-example/common-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@single-spa-example/common-config/-/common-config-1.0.0.tgz#9ac4ebc7c660f34525850ee8cc2f4a4efd787602"
+  integrity sha512-7hx3wWSimtZOmyKt11dLcWwEfcpeESEGsOD3mrLnc2bhom7M7hsgDhgpoePLxtdVZlmx8ku2E2PSgw8umXoMhg==
+  dependencies:
+    autoprefixer "^10.4.7"
+    babel-plugin-module-resolver "^4.1.0"
+    css-loader "^6.7.1"
+    dotenv "^16.0.1"
+    mini-css-extract-plugin "^2.6.0"
+    postcss "^8.4.14"
+    postcss-import "^14.1.0"
+    postcss-loader "^7.0.0"
+    sass "^1.52.1"
+    sass-loader "^13.0.0"
+    style-loader "^3.3.1"
+    tailwindcss "^3.0.24"
+    webpack-config-single-spa-react "^4.0.3"
+    webpack-config-single-spa-react-ts "^4.0.3"
+    webpack-config-single-spa-ts "^4.1.2"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -5543,27 +5564,6 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
-
-single-spa-webpack-config-react-ts@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/single-spa-webpack-config-react-ts/-/single-spa-webpack-config-react-ts-1.0.1.tgz#d1a49e622f090f5b18fedf698fa8bad8d411efd7"
-  integrity sha512-gllXgMqCVmUnWjv0KOhsuXBepI4t+Nl75Wmj1KYGjwfIVlhl8dJ2zfZzJNpXYWTKSeMXV6vlUP8BoxvX5JlyvQ==
-  dependencies:
-    autoprefixer "^10.4.7"
-    babel-plugin-module-resolver "^4.1.0"
-    css-loader "^6.7.1"
-    dotenv "^16.0.1"
-    mini-css-extract-plugin "^2.6.0"
-    postcss "^8.4.14"
-    postcss-import "^14.1.0"
-    postcss-loader "^7.0.0"
-    sass "^1.52.1"
-    sass-loader "^13.0.0"
-    style-loader "^3.3.1"
-    tailwindcss "^3.0.24"
-    webpack-config-single-spa-react "^4.0.3"
-    webpack-config-single-spa-react-ts "^4.0.3"
-    webpack-config-single-spa-ts "^4.1.2"
 
 single-spa@^5.9.3:
   version "5.9.4"

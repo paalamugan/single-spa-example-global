@@ -1,3 +1,5 @@
-const { singleSpaBabelConfig } = require("single-spa-webpack-config-react-ts");
+const {
+  singleSpaReactBabelConfig,
+} = require("@single-spa-example/common-config");
 
-module.exports = singleSpaBabelConfig();
+module.exports = singleSpaReactBabelConfig();
