@@ -1,9 +1,8 @@
 {
   "name": "@single-spa-example/global",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Share data between one to other single spa microfrontend application.",
   "license": "MIT",
-  "main": "dist/single-spa-example-global.js",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
