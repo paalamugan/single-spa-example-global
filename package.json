@@ -1,7 +1,7 @@
 {
-  "name": "@single-spa-share-data/global",
+  "name": "@single-spa-example/global",
   "version": "1.0.0",
-  "description": "Share data between single spa microfrontend application.",
+  "description": "Share data between one to other single spa microfrontend application.",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -57,8 +57,22 @@
   "dependencies": {
     "single-spa": "^5.9.3"
   },
-  "types": "dist/single-spa-global.d.ts",
+  "types": "dist/single-spa-example-global.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "main": "dist/single-spa-example-global.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paalamugan/single-spa-example-global.git"
+  },
+  "keywords": [
+    "single-spa",
+    "rxjs"
+  ],
+  "author": "Paalamugan S",
+  "bugs": {
+    "url": "https://github.com/paalamugan/single-spa-example-global/issues"
+  },
+  "homepage": "https://github.com/paalamugan/single-spa-example-global#readme"
 }

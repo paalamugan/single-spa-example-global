@@ -1,6 +1,6 @@
-# Single spa share data global
+# Single spa example global
 
-Single spa share data between single spa microfrontend application.
+Single spa example share data between one to other single spa microfrontend application.
 
 ## How to Use
 

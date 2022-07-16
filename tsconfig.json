@@ -1,6 +1,6 @@
 {
   "extends": "ts-config-single-spa",
-  "files": ["src/single-spa-share-data-global.ts"],
+  "files": ["src/single-spa-example-global.ts"],
   "compilerOptions": {
     "declarationDir": "dist"
   },
