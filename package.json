@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Share data between one to other single spa microfrontend application.",
   "license": "MIT",
-  "private": false,
+  "main": "dist/single-spa-example-global.js",
   "scripts": {
     "start": "webpack serve",
     "start:standalone": "webpack serve --env standalone",
@@ -61,7 +61,6 @@
   "files": [
     "dist"
   ],
-  "main": "dist/single-spa-example-global.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/paalamugan/single-spa-example-global.git"
