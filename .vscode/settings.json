@@ -1,0 +1,62 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "npm.packageManager": "yarn",
+  // "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "scss.lint.unknownAtRules": "ignore",
+  "restoreTerminals.runOnStartup": false
+  // "restoreTerminals.terminals": [
+  //   {
+  //     "splitTerminals": [
+  //       {
+  //         "name": "myorg",
+  //         "commands": [
+  //           "cd .."
+  //         ]
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "splitTerminals": [
+  //       {
+  //         "name": "portalroot",
+  //         "commands": [
+  //           "cd ..",
+  //           "cd portalroot",
+  //           "yarn start"
+  //         ]
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "splitTerminals": [
+  //       {
+  //         "name": "single-spa-react-ts-biolerplate",
+  //         "commands": [
+  //           "cd ..",
+  //           "cd single-spa-react-ts-biolerplate",
+  //           "yarn start"
+  //         ]
+  //       }
+  //     ]
+  //   },
+  // ]
+}
